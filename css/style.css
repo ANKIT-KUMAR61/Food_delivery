@@ -1,0 +1,208 @@
+           /* CSS Reset */
+*{
+    margin:0;
+    padding:0;
+}
+            /* css variables */
+ :root{
+     --navbar-height:59px;
+ }
+               /* Navigation Bar*/
+ #navbar{
+     display:flex;
+     align-items: center;
+     position: sticky;
+     top: 0px;
+ }
+         /* Navigation Bar : Logo and Image */
+    #logo{
+        margin: 5px 25px;
+    }
+    #logo img{
+        height: 60px;
+        margin: 6px 10px;
+    }
+
+        /* Navigation bar : List Styling*/
+
+ #navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top :0px;
+    left: 0px;
+    z-index:-1;
+    opacity: 0.3;
+}
+ #navbar ul{
+     display: flex;
+ }
+
+ #navbar ul li{
+       /*background-color: black;*/
+     list-style: none;
+     font-size: 1.2rem;
+     font-family: 'Open Sans', sans-serif;
+ }
+ #navbar ul li a{
+     color: white;
+     display: block;
+     padding:3px 20px;
+     border-radius: 15px;
+     text-decoration: none;
+ }
+ #navbar ul li a:hover{
+    color: red;
+   background-color: seashell;
+}
+        /*Home Section*/
+  #home{
+      display: flex;
+      flex-direction: column;
+      height:612px;
+      padding:3px 150px;
+      justify-content: center;
+      align-items: center;
+  }
+  #home::before{
+    content: "";
+    background :url(../image/food-1932466_1920.jpg) no-repeat center center/cover;      /*..for coming out from that folder*/
+    position: absolute;
+    height: 717px;
+    width: 100%;
+    top:0px;
+    left:0px;
+    z-index:-1;        /*to make background text present upper side of image*/
+    opacity: 0.87;
+  }
+
+  #home h1{
+      color:white;
+      text-align: center;
+      font-family: 'Titillium Web', sans-serif;
+  }
+  #home p{
+    color:white;
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Titillium Web', sans-serif;
+}   
+  
+           /*services section*/
+    #service{
+            margin: 20px;
+            display: flex;
+    }
+     #service .box{
+         border: 3px solid black;
+         padding: 30px;
+         margin : 2px 10px;
+         border-radius: 25px;
+         background: rgb(231 135 188 / 8%);
+    }
+   
+    #service .box img{
+        height: 156px;
+        margin: auto;
+   display: block;
+    } 
+    #service .box p{
+        font-family: 'Titillium Web', sans-serif;
+    } 
+                 /*client section*/
+           #client-section{
+                
+                position: relative;
+           }
+           #client-section::before{
+               content: "";
+               position: absolute;
+               background: url(../image/vegetable-skewer-3317055_1920.jpg);
+               width: 100%;
+               height:383px;
+               z-index:-2;
+               opacity:0.4;
+           }
+           #client{
+               display: flex;
+               justify-content: center;
+               align-items: center;
+        }
+        .client-item{
+            padding: 36px;
+
+        }   
+        
+        #client img{
+            height:200px;
+     }
+          
+            /*contact section*/
+          #contact
+          {
+             position: relative;
+          }
+          #contact::before{
+              content: "";
+              position: absolute;
+              width: 100%;
+              height: 107%;
+              z-index: -1;
+              opacity: 0.6;
+              background: url(../image/contact-details-3381225_1920.jpg) no-repeat center center/cover;
+          }  
+          #contact-box{
+              display:flex;
+              justify-content: center;
+              align-items: center;
+              padding-bottom: 20px;
+          } 
+          #contact-box form{
+              width:28%;
+          }
+          #contact-box form {
+            width:28%;  }
+          #contact-box label{
+              font-size: 1.4rem;
+          }
+          #contact-box input,
+          #contact-box textarea{
+              width:100%;
+              padding: 0.5rem;
+              border-radius: 10px;
+              font-size: 1rem;
+          }
+
+          footer{
+              background: black;
+              color: white;
+          }
+
+            /* Utility classes*/
+   .primary{ 
+       font-family:'Times New Roman', Times, serif;
+       font-size: 3rem;
+       padding:15px;
+   } 
+   .secondary{
+    font-size: 2rem;
+    padding:15px;
+   }  
+.btn{
+    padding: 8px 25px;
+    border: 3px solid black;
+    background-color: yellow;
+    color: black;
+    margin: 15px;
+    border-radius: 15px;
+    font-size: medium;
+    cursor: pointer;
+}
+
+.center
+{
+    text-align: center;
+}
+  
